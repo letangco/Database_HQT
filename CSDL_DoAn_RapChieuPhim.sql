@@ -1,4 +1,4 @@
-﻿
+---Ch?nh s?a l?n 1---
 
 CREATE TABLE BAOCAO (
   [MABC] int NOT NULL,
@@ -65,7 +65,7 @@ INSERT INTO ctsp ([SOHD], [MASP], [SL], [TONGGIA], [MAKM]) VALUES
 (8, 4, 1, '10000', 2);
 
 --
-----Chưa thêm vào
+----Ch?a th�m v�o
 --
 CREATE TRIGGER [Delete_CTSP] ON [ctsp] AFTER DELETE  AS UPDATE HOADON SET hoadon.TONGTIEN = hoadon.TONGTIEN - OLD.TONGGIA WHERE hoadon.SOHD = OLD.SOHD
 $$
@@ -109,7 +109,7 @@ INSERT INTO ctve ([SOHD], [MACC], [MAGHE], [MAKM], [TRIGIA]) VALUES
 (8, 6, '1I6', 2, '22500');
 
 --
------Chưa thêm
+-----Ch?a th�m
 --
 CREATE TRIGGER [Delete_CTVE] ON [ctve] AFTER DELETE  AS UPDATE HOADON SET hoadon.TONGTIEN = hoadon.TONGTIEN - OLD.TRIGIA WHERE hoadon.SOHD = OLD.SOHD
 $$
@@ -129,306 +129,306 @@ CREATE TABLE GHE (
 ) ;
 
 INSERT INTO ghe ([MAGHE], [HANG], [COT], [MAPC], [GIA], [LOAIGHE]) VALUES
-('1A0', 'A', '0', 1, 45000, 'Thường'),
-('1A1', 'A', '1', 1, 45000, 'Thường'),
-('1A2', 'A', '2', 1, 45000, 'Thường'),
-('1A3', 'A', '3', 1, 45000, 'Thường'),
-('1A4', 'A', '4', 1, 45000, 'Thường'),
-('1A5', 'A', '5', 1, 45000, 'Thường'),
-('1A6', 'A', '6', 1, 45000, 'Thường'),
-('1A7', 'A', '7', 1, 45000, 'Thường'),
-('1A8', 'A', '8', 1, 45000, 'Thường'),
-('1A9', 'A', '9', 1, 45000, 'Thường'),
-('1B0', 'B', '0', 1, 45000, 'Thường'),
-('1B1', 'B', '1', 1, 45000, 'Thường'),
-('1B2', 'B', '2', 1, 45000, 'Thường'),
-('1B3', 'B', '3', 1, 45000, 'Thường'),
-('1B4', 'B', '4', 1, 45000, 'Thường'),
-('1B5', 'B', '5', 1, 45000, 'Thường'),
-('1B6', 'B', '6', 1, 45000, 'Thường'),
-('1B7', 'B', '7', 1, 45000, 'Thường'),
-('1B8', 'B', '8', 1, 45000, 'Thườngg'),
-('1B9', 'B', '9', 1, 45000, 'Thường'),
-('1C0', 'C', '0', 1, 45000, 'Thường'),
-('1C1', 'C', '1', 1, 45000, 'Thường'),
-('1C2', 'C', '2', 1, 45000, 'Thường'),
-('1C3', 'C', '3', 1, 45000, 'Thường'),
-('1C4', 'C', '4', 1, 45000, 'Thường'),
-('1C5', 'C', '5', 1, 45000, 'Thường'),
-('1C6', 'C', '6', 1, 45000, 'Thường'),
-('1C7', 'C', '7', 1, 45000, 'Thường'),
-('1C8', 'C', '8', 1, 45000, 'Thường'),
-('1C9', 'C', '9', 1, 45000, 'Thường'),
-('1D0', 'D', '0', 1, 45000, 'Thường'),
-('1D1', 'D', '1', 1, 45000, 'Thường'),
-('1D2', 'D', '2', 1, 45000, 'Thường'),
-('1D3', 'D', '3', 1, 45000, 'Thường'),
-('1D4', 'D', '4', 1, 45000, 'Thường'),
-('1D5', 'D', '5', 1, 45000, 'Thường'),
-('1D6', 'D', '6', 1, 45000, 'Thường'),
-('1D7', 'D', '7', 1, 45000, 'Thường'),
-('1D8', 'D', '8', 1, 45000, 'Thường'),
-('1D9', 'D', '9', 1, 45000, 'Thường'),
-('1E0', 'E', '0', 1, 45000, 'Thường'),
-('1E1', 'E', '1', 1, 45000, 'Thường'),
-('1E2', 'E', '2', 1, 45000, 'Thường'),
-('1E3', 'E', '3', 1, 45000, 'Thường'),
-('1E4', 'E', '4', 1, 45000, 'Thường'),
-('1E5', 'E', '5', 1, 45000, 'ThÆ°á»ng'),
-('1E6', 'E', '6', 1, 45000, 'ThÆ°á»ng'),
-('1E7', 'E', '7', 1, 45000, 'ThÆ°á»ng'),
-('1E8', 'E', '8', 1, 45000, 'ThÆ°á»ng'),
-('1E9', 'E', '9', 1, 45000, 'ThÆ°á»ng'),
-('1F0', 'F', '0', 1, 45000, 'ThÆ°á»ng'),
-('1F1', 'F', '1', 1, 45000, 'ThÆ°á»ng'),
-('1F2', 'F', '2', 1, 45000, 'ThÆ°á»ng'),
-('1F3', 'F', '3', 1, 45000, 'ThÆ°á»ng'),
-('1F4', 'F', '4', 1, 45000, 'ThÆ°á»ng'),
-('1F5', 'F', '5', 1, 45000, 'ThÆ°á»ng'),
-('1F6', 'F', '6', 1, 45000, 'ThÆ°á»ng'),
-('1F7', 'F', '7', 1, 45000, 'ThÆ°á»ng'),
-('1F8', 'F', '8', 1, 45000, 'ThÆ°á»ng'),
-('1F9', 'F', '9', 1, 45000, 'ThÆ°á»ng'),
-('1G0', 'G', '0', 1, 45000, 'ThÆ°á»ng'),
-('1G1', 'G', '1', 1, 45000, 'ThÆ°á»ng'),
-('1G2', 'G', '2', 1, 45000, 'ThÆ°á»ng'),
-('1G3', 'G', '3', 1, 45000, 'ThÆ°á»ng'),
-('1G4', 'G', '4', 1, 45000, 'ThÆ°á»ng'),
-('1G5', 'G', '5', 1, 45000, 'ThÆ°á»ng'),
-('1G6', 'G', '6', 1, 45000, 'ThÆ°á»ng'),
-('1G7', 'G', '7', 1, 45000, 'ThÆ°á»ng'),
-('1G8', 'G', '8', 1, 45000, 'ThÆ°á»ng'),
-('1G9', 'G', '9', 1, 45000, 'ThÆ°á»ng'),
-('1H0', 'H', '0', 1, 45000, 'ThÆ°á»ng'),
-('1H1', 'H', '1', 1, 45000, 'ThÆ°á»ng'),
-('1H2', 'H', '2', 1, 45000, 'ThÆ°á»ng'),
-('1H3', 'H', '3', 1, 45000, 'ThÆ°á»ng'),
-('1H4', 'H', '4', 1, 45000, 'ThÆ°á»ng'),
-('1H5', 'H', '5', 1, 45000, 'ThÆ°á»ng'),
-('1H6', 'H', '6', 1, 45000, 'ThÆ°á»ng'),
-('1H7', 'H', '7', 1, 45000, 'ThÆ°á»ng'),
-('1H8', 'H', '8', 1, 45000, 'ThÆ°á»ng'),
-('1H9', 'H', '9', 1, 45000, 'ThÆ°á»ng'),
-('1I0', 'I', '0', 1, 45000, 'ThÆ°á»ng'),
-('1I1', 'I', '1', 1, 45000, 'ThÆ°á»ng'),
-('1I2', 'I', '2', 1, 45000, 'ThÆ°á»ng'),
-('1I3', 'I', '3', 1, 45000, 'ThÆ°á»ng'),
-('1I4', 'I', '4', 1, 45000, 'ThÆ°á»ng'),
-('1I5', 'I', '5', 1, 45000, 'ThÆ°á»ng'),
-('1I6', 'I', '6', 1, 45000, 'ThÆ°á»ng'),
-('1I7', 'I', '7', 1, 45000, 'ThÆ°á»ng'),
-('1I8', 'I', '8', 1, 45000, 'ThÆ°á»ng'),
-('1I9', 'I', '9', 1, 45000, 'ThÆ°á»ng'),
-('1J0', 'J', '0', 1, 45000, 'ThÆ°á»ng'),
-('1J1', 'J', '1', 1, 45000, 'ThÆ°á»ng'),
-('1J2', 'J', '2', 1, 45000, 'ThÆ°á»ng'),
-('1J3', 'J', '3', 1, 45000, 'ThÆ°á»ng'),
-('1J4', 'J', '4', 1, 45000, 'ThÆ°á»ng'),
-('1J5', 'J', '5', 1, 45000, 'ThÆ°á»ng'),
-('1J6', 'J', '6', 1, 45000, 'ThÆ°á»ng'),
-('1J7', 'J', '7', 1, 45000, 'ThÆ°á»ng'),
-('1J8', 'J', '8', 1, 45000, 'ThÆ°á»ng'),
-('1J9', 'J', '9', 1, 45000, 'ThÆ°á»ng'),
-('2A0', 'A', '0', 2, 45000, 'ThÆ°á»ng'),
-('2A1', 'A', '1', 2, 45000, 'ThÆ°á»ng'),
-('2A2', 'A', '2', 2, 45000, 'ThÆ°á»ng'),
-('2A3', 'A', '3', 2, 45000, 'ThÆ°á»ng'),
-('2A4', 'A', '4', 2, 45000, 'ThÆ°á»ng'),
-('2A5', 'A', '5', 2, 45000, 'ThÆ°á»ng'),
-('2A6', 'A', '6', 2, 45000, 'ThÆ°á»ng'),
-('2A7', 'A', '7', 2, 45000, 'ThÆ°á»ng'),
-('2A8', 'A', '8', 2, 45000, 'ThÆ°á»ng'),
-('2A9', 'A', '9', 2, 45000, 'ThÆ°á»ng'),
-('2B0', 'B', '0', 2, 45000, 'ThÆ°á»ng'),
-('2B1', 'B', '1', 2, 45000, 'ThÆ°á»ng'),
-('2B2', 'B', '2', 2, 45000, 'ThÆ°á»ng'),
-('2B3', 'B', '3', 2, 45000, 'ThÆ°á»ng'),
-('2B4', 'B', '4', 2, 45000, 'ThÆ°á»ng'),
-('2B5', 'B', '5', 2, 45000, 'ThÆ°á»ng'),
-('2B6', 'B', '6', 2, 45000, 'ThÆ°á»ng'),
-('2B7', 'B', '7', 2, 45000, 'ThÆ°á»ng'),
-('2B8', 'B', '8', 2, 45000, 'ThÆ°á»ng'),
-('2B9', 'B', '9', 2, 45000, 'ThÆ°á»ng'),
-('2C0', 'C', '0', 2, 45000, 'ThÆ°á»ng'),
-('2C1', 'C', '1', 2, 45000, 'ThÆ°á»ng'),
-('2C2', 'C', '2', 2, 45000, 'ThÆ°á»ng'),
-('2C3', 'C', '3', 2, 45000, 'ThÆ°á»ng'),
-('2C4', 'C', '4', 2, 45000, 'ThÆ°á»ng'),
-('2C5', 'C', '5', 2, 45000, 'ThÆ°á»ng'),
-('2C6', 'C', '6', 2, 45000, 'ThÆ°á»ng'),
-('2C7', 'C', '7', 2, 45000, 'ThÆ°á»ng'),
-('2C8', 'C', '8', 2, 45000, 'ThÆ°á»ng'),
-('2C9', 'C', '9', 2, 45000, 'ThÆ°á»ng'),
-('2D0', 'D', '0', 2, 45000, 'ThÆ°á»ng'),
-('2D1', 'D', '1', 2, 45000, 'ThÆ°á»ng'),
-('2D2', 'D', '2', 2, 45000, 'ThÆ°á»ng'),
-('2D3', 'D', '3', 2, 45000, 'ThÆ°á»ng'),
-('2D4', 'D', '4', 2, 45000, 'ThÆ°á»ng'),
-('2D5', 'D', '5', 2, 45000, 'ThÆ°á»ng'),
-('2D6', 'D', '6', 2, 45000, 'ThÆ°á»ng'),
-('2D7', 'D', '7', 2, 45000, 'ThÆ°á»ng'),
-('2D8', 'D', '8', 2, 45000, 'ThÆ°á»ng'),
-('2D9', 'D', '9', 2, 45000, 'ThÆ°á»ng'),
-('2E0', 'E', '0', 2, 45000, 'ThÆ°á»ng'),
-('2E1', 'E', '1', 2, 45000, 'ThÆ°á»ng'),
-('2E2', 'E', '2', 2, 45000, 'ThÆ°á»ng'),
-('2E3', 'E', '3', 2, 45000, 'ThÆ°á»ng'),
-('2E4', 'E', '4', 2, 45000, 'ThÆ°á»ng'),
-('2E5', 'E', '5', 2, 45000, 'ThÆ°á»ng'),
-('2E6', 'E', '6', 2, 45000, 'ThÆ°á»ng'),
-('2E7', 'E', '7', 2, 45000, 'ThÆ°á»ng'),
-('2E8', 'E', '8', 2, 45000, 'ThÆ°á»ng'),
-('2E9', 'E', '9', 2, 45000, 'ThÆ°á»ng'),
-('2F0', 'F', '0', 2, 45000, 'ThÆ°á»ng'),
-('2F1', 'F', '1', 2, 45000, 'ThÆ°á»ng'),
-('2F2', 'F', '2', 2, 45000, 'ThÆ°á»ng'),
-('2F3', 'F', '3', 2, 45000, 'ThÆ°á»ng'),
-('2F4', 'F', '4', 2, 45000, 'ThÆ°á»ng'),
-('2F5', 'F', '5', 2, 45000, 'ThÆ°á»ng'),
-('2F6', 'F', '6', 2, 45000, 'ThÆ°á»ng'),
-('2F7', 'F', '7', 2, 45000, 'ThÆ°á»ng'),
-('2F8', 'F', '8', 2, 45000, 'ThÆ°á»ng'),
-('2F9', 'F', '9', 2, 45000, 'ThÆ°á»ng'),
-('2G0', 'G', '0', 2, 45000, 'ThÆ°á»ng'),
-('2G1', 'G', '1', 2, 45000, 'ThÆ°á»ng'),
-('2G2', 'G', '2', 2, 45000, 'ThÆ°á»ng'),
-('2G3', 'G', '3', 2, 45000, 'ThÆ°á»ng'),
-('2G4', 'G', '4', 2, 45000, 'ThÆ°á»ng'),
-('2G5', 'G', '5', 2, 45000, 'ThÆ°á»ng'),
-('2G6', 'G', '6', 2, 45000, 'ThÆ°á»ng'),
-('2G7', 'G', '7', 2, 45000, 'ThÆ°á»ng'),
-('2G8', 'G', '8', 2, 45000, 'ThÆ°á»ng'),
-('2G9', 'G', '9', 2, 45000, 'ThÆ°á»ng'),
-('2H0', 'H', '0', 2, 45000, 'ThÆ°á»ng'),
-('2H1', 'H', '1', 2, 45000, 'ThÆ°á»ng'),
-('2H2', 'H', '2', 2, 45000, 'ThÆ°á»ng'),
-('2H3', 'H', '3', 2, 45000, 'ThÆ°á»ng'),
-('2H4', 'H', '4', 2, 45000, 'ThÆ°á»ng'),
-('2H5', 'H', '5', 2, 45000, 'ThÆ°á»ng'),
-('2H6', 'H', '6', 2, 45000, 'ThÆ°á»ng'),
-('2H7', 'H', '7', 2, 45000, 'ThÆ°á»ng'),
-('2H8', 'H', '8', 2, 45000, 'ThÆ°á»ng'),
-('2H9', 'H', '9', 2, 45000, 'ThÆ°á»ng'),
-('2I0', 'I', '0', 2, 45000, 'ThÆ°á»ng'),
-('2I1', 'I', '1', 2, 45000, 'ThÆ°á»ng'),
-('2I2', 'I', '2', 2, 45000, 'ThÆ°á»ng'),
-('2I3', 'I', '3', 2, 45000, 'ThÆ°á»ng'),
-('2I4', 'I', '4', 2, 45000, 'ThÆ°á»ng'),
-('2I5', 'I', '5', 2, 45000, 'ThÆ°á»ng'),
-('2I6', 'I', '6', 2, 45000, 'ThÆ°á»ng'),
-('2I7', 'I', '7', 2, 45000, 'ThÆ°á»ng'),
-('2I8', 'I', '8', 2, 45000, 'ThÆ°á»ng'),
-('2I9', 'I', '9', 2, 45000, 'ThÆ°á»ng'),
-('2J0', 'J', '0', 2, 45000, 'ThÆ°á»ng'),
-('2J1', 'J', '1', 2, 45000, 'ThÆ°á»ng'),
-('2J2', 'J', '2', 2, 45000, 'ThÆ°á»ng'),
-('2J3', 'J', '3', 2, 45000, 'ThÆ°á»ng'),
-('2J4', 'J', '4', 2, 45000, 'ThÆ°á»ng'),
-('2J5', 'J', '5', 2, 45000, 'ThÆ°á»ng'),
-('2J6', 'J', '6', 2, 45000, 'ThÆ°á»ng'),
-('2J7', 'J', '7', 2, 45000, 'ThÆ°á»ng'),
-('2J8', 'J', '8', 2, 45000, 'ThÆ°á»ng'),
-('2J9', 'J', '9', 2, 45000, 'ThÆ°á»ng'),
-('3A0', 'A', '0', 3, 45000, 'ThÆ°á»ng'),
-('3A1', 'A', '1', 3, 45000, 'ThÆ°á»ng'),
-('3A2', 'A', '2', 3, 45000, 'ThÆ°á»ng'),
-('3A3', 'A', '3', 3, 45000, 'ThÆ°á»ng'),
-('3A4', 'A', '4', 3, 45000, 'ThÆ°á»ng'),
-('3A5', 'A', '5', 3, 45000, 'ThÆ°á»ng'),
-('3A6', 'A', '6', 3, 45000, 'ThÆ°á»ng'),
-('3A7', 'A', '7', 3, 45000, 'ThÆ°á»ng'),
-('3A8', 'A', '8', 3, 45000, 'ThÆ°á»ng'),
-('3A9', 'A', '9', 3, 45000, 'ThÆ°á»ng'),
-('3B0', 'B', '0', 3, 45000, 'ThÆ°á»ng'),
-('3B1', 'B', '1', 3, 45000, 'ThÆ°á»ng'),
-('3B2', 'B', '2', 3, 45000, 'ThÆ°á»ng'),
-('3B3', 'B', '3', 3, 45000, 'ThÆ°á»ng'),
-('3B4', 'B', '4', 3, 45000, 'ThÆ°á»ng'),
-('3B5', 'B', '5', 3, 45000, 'ThÆ°á»ng'),
-('3B6', 'B', '6', 3, 45000, 'ThÆ°á»ng'),
-('3B7', 'B', '7', 3, 45000, 'ThÆ°á»ng'),
-('3B8', 'B', '8', 3, 45000, 'ThÆ°á»ng'),
-('3B9', 'B', '9', 3, 45000, 'ThÆ°á»ng'),
-('3C0', 'C', '0', 3, 45000, 'ThÆ°á»ng'),
-('3C1', 'C', '1', 3, 45000, 'ThÆ°á»ng'),
-('3C2', 'C', '2', 3, 45000, 'ThÆ°á»ng'),
-('3C3', 'C', '3', 3, 45000, 'ThÆ°á»ng'),
-('3C4', 'C', '4', 3, 45000, 'ThÆ°á»ng'),
-('3C5', 'C', '5', 3, 45000, 'ThÆ°á»ng'),
-('3C6', 'C', '6', 3, 45000, 'ThÆ°á»ng'),
-('3C7', 'C', '7', 3, 45000, 'ThÆ°á»ng'),
-('3C8', 'C', '8', 3, 45000, 'ThÆ°á»ng'),
-('3C9', 'C', '9', 3, 45000, 'ThÆ°á»ng'),
-('3D0', 'D', '0', 3, 45000, 'ThÆ°á»ng'),
-('3D1', 'D', '1', 3, 45000, 'ThÆ°á»ng'),
-('3D2', 'D', '2', 3, 45000, 'ThÆ°á»ng'),
-('3D3', 'D', '3', 3, 45000, 'ThÆ°á»ng'),
-('3D4', 'D', '4', 3, 45000, 'ThÆ°á»ng'),
-('3D5', 'D', '5', 3, 45000, 'ThÆ°á»ng'),
-('3D6', 'D', '6', 3, 45000, 'ThÆ°á»ng'),
-('3D7', 'D', '7', 3, 45000, 'ThÆ°á»ng'),
-('3D8', 'D', '8', 3, 45000, 'ThÆ°á»ng'),
-('3D9', 'D', '9', 3, 45000, 'ThÆ°á»ng'),
-('3E0', 'E', '0', 3, 45000, 'ThÆ°á»ng'),
-('3E1', 'E', '1', 3, 45000, 'ThÆ°á»ng'),
-('3E2', 'E', '2', 3, 45000, 'ThÆ°á»ng'),
-('3E3', 'E', '3', 3, 45000, 'ThÆ°á»ng'),
-('3E4', 'E', '4', 3, 45000, 'ThÆ°á»ng'),
-('3E5', 'E', '5', 3, 45000, 'ThÆ°á»ng'),
-('3E6', 'E', '6', 3, 45000, 'ThÆ°á»ng'),
-('3E7', 'E', '7', 3, 45000, 'ThÆ°á»ng'),
-('3E8', 'E', '8', 3, 45000, 'ThÆ°á»ng'),
-('3E9', 'E', '9', 3, 45000, 'ThÆ°á»ng'),
-('3F0', 'F', '0', 3, 45000, 'ThÆ°á»ng'),
-('3F1', 'F', '1', 3, 45000, 'ThÆ°á»ng'),
-('3F2', 'F', '2', 3, 45000, 'ThÆ°á»ng'),
-('3F3', 'F', '3', 3, 45000, 'ThÆ°á»ng'),
-('3F4', 'F', '4', 3, 45000, 'ThÆ°á»ng'),
-('3F5', 'F', '5', 3, 45000, 'ThÆ°á»ng'),
-('3F6', 'F', '6', 3, 45000, 'ThÆ°á»ng'),
-('3F7', 'F', '7', 3, 45000, 'ThÆ°á»ng'),
-('3F8', 'F', '8', 3, 45000, 'ThÆ°á»ng'),
-('3F9', 'F', '9', 3, 45000, 'ThÆ°á»ng'),
-('3G0', 'G', '0', 3, 45000, 'ThÆ°á»ng'),
-('3G1', 'G', '1', 3, 45000, 'ThÆ°á»ng'),
-('3G2', 'G', '2', 3, 45000, 'ThÆ°á»ng'),
-('3G3', 'G', '3', 3, 45000, 'ThÆ°á»ng'),
-('3G4', 'G', '4', 3, 45000, 'ThÆ°á»ng'),
-('3G5', 'G', '5', 3, 45000, 'ThÆ°á»ng'),
-('3G6', 'G', '6', 3, 45000, 'ThÆ°á»ng'),
-('3G7', 'G', '7', 3, 45000, 'ThÆ°á»ng'),
-('3G8', 'G', '8', 3, 45000, 'ThÆ°á»ng'),
-('3G9', 'G', '9', 3, 45000, 'ThÆ°á»ng'),
-('3H0', 'H', '0', 3, 45000, 'ThÆ°á»ng'),
-('3H1', 'H', '1', 3, 45000, 'ThÆ°á»ng'),
-('3H2', 'H', '2', 3, 45000, 'ThÆ°á»ng'),
-('3H3', 'H', '3', 3, 45000, 'ThÆ°á»ng'),
-('3H4', 'H', '4', 3, 45000, 'ThÆ°á»ng'),
-('3H5', 'H', '5', 3, 45000, 'ThÆ°á»ng'),
-('3H6', 'H', '6', 3, 45000, 'ThÆ°á»ng'),
-('3H7', 'H', '7', 3, 45000, 'ThÆ°á»ng'),
-('3H8', 'H', '8', 3, 45000, 'ThÆ°á»ng'),
-('3H9', 'H', '9', 3, 45000, 'ThÆ°á»ng'),
-('3I0', 'I', '0', 3, 45000, 'ThÆ°á»ng'),
-('3I1', 'I', '1', 3, 45000, 'ThÆ°á»ng'),
-('3I2', 'I', '2', 3, 45000, 'ThÆ°á»ng'),
-('3I3', 'I', '3', 3, 45000, 'ThÆ°á»ng'),
-('3I4', 'I', '4', 3, 45000, 'ThÆ°á»ng'),
-('3I5', 'I', '5', 3, 45000, 'ThÆ°á»ng'),
-('3I6', 'I', '6', 3, 45000, 'ThÆ°á»ng'),
-('3I7', 'I', '7', 3, 45000, 'ThÆ°á»ng'),
-('3I8', 'I', '8', 3, 45000, 'ThÆ°á»ng'),
-('3I9', 'I', '9', 3, 45000, 'ThÆ°á»ng'),
-('3J0', 'J', '0', 3, 45000, 'ThÆ°á»ng'),
-('3J1', 'J', '1', 3, 45000, 'ThÆ°á»ng'),
-('3J2', 'J', '2', 3, 45000, 'ThÆ°á»ng'),
-('3J3', 'J', '3', 3, 45000, 'ThÆ°á»ng'),
-('3J4', 'J', '4', 3, 45000, 'ThÆ°á»ng'),
-('3J5', 'J', '5', 3, 45000, 'ThÆ°á»ng'),
-('3J6', 'J', '6', 3, 45000, 'ThÆ°á»ng'),
-('3J7', 'J', '7', 3, 45000, 'ThÆ°á»ng'),
-('3J8', 'J', '8', 3, 45000, 'ThÆ°á»ng'),
-('3J9', 'J', '9', 3, 45000, 'ThÆ°á»ng');
+('1A0', 'A', '0', 1, 45000, 'Th??ng'),
+('1A1', 'A', '1', 1, 45000, 'Th??ng'),
+('1A2', 'A', '2', 1, 45000, 'Th??ng'),
+('1A3', 'A', '3', 1, 45000, 'Th??ng'),
+('1A4', 'A', '4', 1, 45000, 'Th??ng'),
+('1A5', 'A', '5', 1, 45000, 'Th??ng'),
+('1A6', 'A', '6', 1, 45000, 'Th??ng'),
+('1A7', 'A', '7', 1, 45000, 'Th??ng'),
+('1A8', 'A', '8', 1, 45000, 'Th??ng'),
+('1A9', 'A', '9', 1, 45000, 'Th??ng'),
+('1B0', 'B', '0', 1, 45000, 'Th??ng'),
+('1B1', 'B', '1', 1, 45000, 'Th??ng'),
+('1B2', 'B', '2', 1, 45000, 'Th??ng'),
+('1B3', 'B', '3', 1, 45000, 'Th??ng'),
+('1B4', 'B', '4', 1, 45000, 'Th??ng'),
+('1B5', 'B', '5', 1, 45000, 'Th??ng'),
+('1B6', 'B', '6', 1, 45000, 'Th??ng'),
+('1B7', 'B', '7', 1, 45000, 'Th??ng'),
+('1B8', 'B', '8', 1, 45000, 'Th??ngg'),
+('1B9', 'B', '9', 1, 45000, 'Th??ng'),
+('1C0', 'C', '0', 1, 45000, 'Th??ng'),
+('1C1', 'C', '1', 1, 45000, 'Th??ng'),
+('1C2', 'C', '2', 1, 45000, 'Th??ng'),
+('1C3', 'C', '3', 1, 45000, 'Th??ng'),
+('1C4', 'C', '4', 1, 45000, 'Th??ng'),
+('1C5', 'C', '5', 1, 45000, 'Th??ng'),
+('1C6', 'C', '6', 1, 45000, 'Th??ng'),
+('1C7', 'C', '7', 1, 45000, 'Th??ng'),
+('1C8', 'C', '8', 1, 45000, 'Th??ng'),
+('1C9', 'C', '9', 1, 45000, 'Th??ng'),
+('1D0', 'D', '0', 1, 45000, 'Th??ng'),
+('1D1', 'D', '1', 1, 45000, 'Th??ng'),
+('1D2', 'D', '2', 1, 45000, 'Th??ng'),
+('1D3', 'D', '3', 1, 45000, 'Th??ng'),
+('1D4', 'D', '4', 1, 45000, 'Th??ng'),
+('1D5', 'D', '5', 1, 45000, 'Th??ng'),
+('1D6', 'D', '6', 1, 45000, 'Th??ng'),
+('1D7', 'D', '7', 1, 45000, 'Th??ng'),
+('1D8', 'D', '8', 1, 45000, 'Th??ng'),
+('1D9', 'D', '9', 1, 45000, 'Th??ng'),
+('1E0', 'E', '0', 1, 45000, 'Th??ng'),
+('1E1', 'E', '1', 1, 45000, 'Th??ng'),
+('1E2', 'E', '2', 1, 45000, 'Th??ng'),
+('1E3', 'E', '3', 1, 45000, 'Th??ng'),
+('1E4', 'E', '4', 1, 45000, 'Th??ng'),
+('1E5', 'E', '5', 1, 45000, 'Thường'),
+('1E6', 'E', '6', 1, 45000, 'Thường'),
+('1E7', 'E', '7', 1, 45000, 'Thường'),
+('1E8', 'E', '8', 1, 45000, 'Thường'),
+('1E9', 'E', '9', 1, 45000, 'Thường'),
+('1F0', 'F', '0', 1, 45000, 'Thường'),
+('1F1', 'F', '1', 1, 45000, 'Thường'),
+('1F2', 'F', '2', 1, 45000, 'Thường'),
+('1F3', 'F', '3', 1, 45000, 'Thường'),
+('1F4', 'F', '4', 1, 45000, 'Thường'),
+('1F5', 'F', '5', 1, 45000, 'Thường'),
+('1F6', 'F', '6', 1, 45000, 'Thường'),
+('1F7', 'F', '7', 1, 45000, 'Thường'),
+('1F8', 'F', '8', 1, 45000, 'Thường'),
+('1F9', 'F', '9', 1, 45000, 'Thường'),
+('1G0', 'G', '0', 1, 45000, 'Thường'),
+('1G1', 'G', '1', 1, 45000, 'Thường'),
+('1G2', 'G', '2', 1, 45000, 'Thường'),
+('1G3', 'G', '3', 1, 45000, 'Thường'),
+('1G4', 'G', '4', 1, 45000, 'Thường'),
+('1G5', 'G', '5', 1, 45000, 'Thường'),
+('1G6', 'G', '6', 1, 45000, 'Thường'),
+('1G7', 'G', '7', 1, 45000, 'Thường'),
+('1G8', 'G', '8', 1, 45000, 'Thường'),
+('1G9', 'G', '9', 1, 45000, 'Thường'),
+('1H0', 'H', '0', 1, 45000, 'Thường'),
+('1H1', 'H', '1', 1, 45000, 'Thường'),
+('1H2', 'H', '2', 1, 45000, 'Thường'),
+('1H3', 'H', '3', 1, 45000, 'Thường'),
+('1H4', 'H', '4', 1, 45000, 'Thường'),
+('1H5', 'H', '5', 1, 45000, 'Thường'),
+('1H6', 'H', '6', 1, 45000, 'Thường'),
+('1H7', 'H', '7', 1, 45000, 'Thường'),
+('1H8', 'H', '8', 1, 45000, 'Thường'),
+('1H9', 'H', '9', 1, 45000, 'Thường'),
+('1I0', 'I', '0', 1, 45000, 'Thường'),
+('1I1', 'I', '1', 1, 45000, 'Thường'),
+('1I2', 'I', '2', 1, 45000, 'Thường'),
+('1I3', 'I', '3', 1, 45000, 'Thường'),
+('1I4', 'I', '4', 1, 45000, 'Thường'),
+('1I5', 'I', '5', 1, 45000, 'Thường'),
+('1I6', 'I', '6', 1, 45000, 'Thường'),
+('1I7', 'I', '7', 1, 45000, 'Thường'),
+('1I8', 'I', '8', 1, 45000, 'Thường'),
+('1I9', 'I', '9', 1, 45000, 'Thường'),
+('1J0', 'J', '0', 1, 45000, 'Thường'),
+('1J1', 'J', '1', 1, 45000, 'Thường'),
+('1J2', 'J', '2', 1, 45000, 'Thường'),
+('1J3', 'J', '3', 1, 45000, 'Thường'),
+('1J4', 'J', '4', 1, 45000, 'Thường'),
+('1J5', 'J', '5', 1, 45000, 'Thường'),
+('1J6', 'J', '6', 1, 45000, 'Thường'),
+('1J7', 'J', '7', 1, 45000, 'Thường'),
+('1J8', 'J', '8', 1, 45000, 'Thường'),
+('1J9', 'J', '9', 1, 45000, 'Thường'),
+('2A0', 'A', '0', 2, 45000, 'Thường'),
+('2A1', 'A', '1', 2, 45000, 'Thường'),
+('2A2', 'A', '2', 2, 45000, 'Thường'),
+('2A3', 'A', '3', 2, 45000, 'Thường'),
+('2A4', 'A', '4', 2, 45000, 'Thường'),
+('2A5', 'A', '5', 2, 45000, 'Thường'),
+('2A6', 'A', '6', 2, 45000, 'Thường'),
+('2A7', 'A', '7', 2, 45000, 'Thường'),
+('2A8', 'A', '8', 2, 45000, 'Thường'),
+('2A9', 'A', '9', 2, 45000, 'Thường'),
+('2B0', 'B', '0', 2, 45000, 'Thường'),
+('2B1', 'B', '1', 2, 45000, 'Thường'),
+('2B2', 'B', '2', 2, 45000, 'Thường'),
+('2B3', 'B', '3', 2, 45000, 'Thường'),
+('2B4', 'B', '4', 2, 45000, 'Thường'),
+('2B5', 'B', '5', 2, 45000, 'Thường'),
+('2B6', 'B', '6', 2, 45000, 'Thường'),
+('2B7', 'B', '7', 2, 45000, 'Thường'),
+('2B8', 'B', '8', 2, 45000, 'Thường'),
+('2B9', 'B', '9', 2, 45000, 'Thường'),
+('2C0', 'C', '0', 2, 45000, 'Thường'),
+('2C1', 'C', '1', 2, 45000, 'Thường'),
+('2C2', 'C', '2', 2, 45000, 'Thường'),
+('2C3', 'C', '3', 2, 45000, 'Thường'),
+('2C4', 'C', '4', 2, 45000, 'Thường'),
+('2C5', 'C', '5', 2, 45000, 'Thường'),
+('2C6', 'C', '6', 2, 45000, 'Thường'),
+('2C7', 'C', '7', 2, 45000, 'Thường'),
+('2C8', 'C', '8', 2, 45000, 'Thường'),
+('2C9', 'C', '9', 2, 45000, 'Thường'),
+('2D0', 'D', '0', 2, 45000, 'Thường'),
+('2D1', 'D', '1', 2, 45000, 'Thường'),
+('2D2', 'D', '2', 2, 45000, 'Thường'),
+('2D3', 'D', '3', 2, 45000, 'Thường'),
+('2D4', 'D', '4', 2, 45000, 'Thường'),
+('2D5', 'D', '5', 2, 45000, 'Thường'),
+('2D6', 'D', '6', 2, 45000, 'Thường'),
+('2D7', 'D', '7', 2, 45000, 'Thường'),
+('2D8', 'D', '8', 2, 45000, 'Thường'),
+('2D9', 'D', '9', 2, 45000, 'Thường'),
+('2E0', 'E', '0', 2, 45000, 'Thường'),
+('2E1', 'E', '1', 2, 45000, 'Thường'),
+('2E2', 'E', '2', 2, 45000, 'Thường'),
+('2E3', 'E', '3', 2, 45000, 'Thường'),
+('2E4', 'E', '4', 2, 45000, 'Thường'),
+('2E5', 'E', '5', 2, 45000, 'Thường'),
+('2E6', 'E', '6', 2, 45000, 'Thường'),
+('2E7', 'E', '7', 2, 45000, 'Thường'),
+('2E8', 'E', '8', 2, 45000, 'Thường'),
+('2E9', 'E', '9', 2, 45000, 'Thường'),
+('2F0', 'F', '0', 2, 45000, 'Thường'),
+('2F1', 'F', '1', 2, 45000, 'Thường'),
+('2F2', 'F', '2', 2, 45000, 'Thường'),
+('2F3', 'F', '3', 2, 45000, 'Thường'),
+('2F4', 'F', '4', 2, 45000, 'Thường'),
+('2F5', 'F', '5', 2, 45000, 'Thường'),
+('2F6', 'F', '6', 2, 45000, 'Thường'),
+('2F7', 'F', '7', 2, 45000, 'Thường'),
+('2F8', 'F', '8', 2, 45000, 'Thường'),
+('2F9', 'F', '9', 2, 45000, 'Thường'),
+('2G0', 'G', '0', 2, 45000, 'Thường'),
+('2G1', 'G', '1', 2, 45000, 'Thường'),
+('2G2', 'G', '2', 2, 45000, 'Thường'),
+('2G3', 'G', '3', 2, 45000, 'Thường'),
+('2G4', 'G', '4', 2, 45000, 'Thường'),
+('2G5', 'G', '5', 2, 45000, 'Thường'),
+('2G6', 'G', '6', 2, 45000, 'Thường'),
+('2G7', 'G', '7', 2, 45000, 'Thường'),
+('2G8', 'G', '8', 2, 45000, 'Thường'),
+('2G9', 'G', '9', 2, 45000, 'Thường'),
+('2H0', 'H', '0', 2, 45000, 'Thường'),
+('2H1', 'H', '1', 2, 45000, 'Thường'),
+('2H2', 'H', '2', 2, 45000, 'Thường'),
+('2H3', 'H', '3', 2, 45000, 'Thường'),
+('2H4', 'H', '4', 2, 45000, 'Thường'),
+('2H5', 'H', '5', 2, 45000, 'Thường'),
+('2H6', 'H', '6', 2, 45000, 'Thường'),
+('2H7', 'H', '7', 2, 45000, 'Thường'),
+('2H8', 'H', '8', 2, 45000, 'Thường'),
+('2H9', 'H', '9', 2, 45000, 'Thường'),
+('2I0', 'I', '0', 2, 45000, 'Thường'),
+('2I1', 'I', '1', 2, 45000, 'Thường'),
+('2I2', 'I', '2', 2, 45000, 'Thường'),
+('2I3', 'I', '3', 2, 45000, 'Thường'),
+('2I4', 'I', '4', 2, 45000, 'Thường'),
+('2I5', 'I', '5', 2, 45000, 'Thường'),
+('2I6', 'I', '6', 2, 45000, 'Thường'),
+('2I7', 'I', '7', 2, 45000, 'Thường'),
+('2I8', 'I', '8', 2, 45000, 'Thường'),
+('2I9', 'I', '9', 2, 45000, 'Thường'),
+('2J0', 'J', '0', 2, 45000, 'Thường'),
+('2J1', 'J', '1', 2, 45000, 'Thường'),
+('2J2', 'J', '2', 2, 45000, 'Thường'),
+('2J3', 'J', '3', 2, 45000, 'Thường'),
+('2J4', 'J', '4', 2, 45000, 'Thường'),
+('2J5', 'J', '5', 2, 45000, 'Thường'),
+('2J6', 'J', '6', 2, 45000, 'Thường'),
+('2J7', 'J', '7', 2, 45000, 'Thường'),
+('2J8', 'J', '8', 2, 45000, 'Thường'),
+('2J9', 'J', '9', 2, 45000, 'Thường'),
+('3A0', 'A', '0', 3, 45000, 'Thường'),
+('3A1', 'A', '1', 3, 45000, 'Thường'),
+('3A2', 'A', '2', 3, 45000, 'Thường'),
+('3A3', 'A', '3', 3, 45000, 'Thường'),
+('3A4', 'A', '4', 3, 45000, 'Thường'),
+('3A5', 'A', '5', 3, 45000, 'Thường'),
+('3A6', 'A', '6', 3, 45000, 'Thường'),
+('3A7', 'A', '7', 3, 45000, 'Thường'),
+('3A8', 'A', '8', 3, 45000, 'Thường'),
+('3A9', 'A', '9', 3, 45000, 'Thường'),
+('3B0', 'B', '0', 3, 45000, 'Thường'),
+('3B1', 'B', '1', 3, 45000, 'Thường'),
+('3B2', 'B', '2', 3, 45000, 'Thường'),
+('3B3', 'B', '3', 3, 45000, 'Thường'),
+('3B4', 'B', '4', 3, 45000, 'Thường'),
+('3B5', 'B', '5', 3, 45000, 'Thường'),
+('3B6', 'B', '6', 3, 45000, 'Thường'),
+('3B7', 'B', '7', 3, 45000, 'Thường'),
+('3B8', 'B', '8', 3, 45000, 'Thường'),
+('3B9', 'B', '9', 3, 45000, 'Thường'),
+('3C0', 'C', '0', 3, 45000, 'Thường'),
+('3C1', 'C', '1', 3, 45000, 'Thường'),
+('3C2', 'C', '2', 3, 45000, 'Thường'),
+('3C3', 'C', '3', 3, 45000, 'Thường'),
+('3C4', 'C', '4', 3, 45000, 'Thường'),
+('3C5', 'C', '5', 3, 45000, 'Thường'),
+('3C6', 'C', '6', 3, 45000, 'Thường'),
+('3C7', 'C', '7', 3, 45000, 'Thường'),
+('3C8', 'C', '8', 3, 45000, 'Thường'),
+('3C9', 'C', '9', 3, 45000, 'Thường'),
+('3D0', 'D', '0', 3, 45000, 'Thường'),
+('3D1', 'D', '1', 3, 45000, 'Thường'),
+('3D2', 'D', '2', 3, 45000, 'Thường'),
+('3D3', 'D', '3', 3, 45000, 'Thường'),
+('3D4', 'D', '4', 3, 45000, 'Thường'),
+('3D5', 'D', '5', 3, 45000, 'Thường'),
+('3D6', 'D', '6', 3, 45000, 'Thường'),
+('3D7', 'D', '7', 3, 45000, 'Thường'),
+('3D8', 'D', '8', 3, 45000, 'Thường'),
+('3D9', 'D', '9', 3, 45000, 'Thường'),
+('3E0', 'E', '0', 3, 45000, 'Thường'),
+('3E1', 'E', '1', 3, 45000, 'Thường'),
+('3E2', 'E', '2', 3, 45000, 'Thường'),
+('3E3', 'E', '3', 3, 45000, 'Thường'),
+('3E4', 'E', '4', 3, 45000, 'Thường'),
+('3E5', 'E', '5', 3, 45000, 'Thường'),
+('3E6', 'E', '6', 3, 45000, 'Thường'),
+('3E7', 'E', '7', 3, 45000, 'Thường'),
+('3E8', 'E', '8', 3, 45000, 'Thường'),
+('3E9', 'E', '9', 3, 45000, 'Thường'),
+('3F0', 'F', '0', 3, 45000, 'Thường'),
+('3F1', 'F', '1', 3, 45000, 'Thường'),
+('3F2', 'F', '2', 3, 45000, 'Thường'),
+('3F3', 'F', '3', 3, 45000, 'Thường'),
+('3F4', 'F', '4', 3, 45000, 'Thường'),
+('3F5', 'F', '5', 3, 45000, 'Thường'),
+('3F6', 'F', '6', 3, 45000, 'Thường'),
+('3F7', 'F', '7', 3, 45000, 'Thường'),
+('3F8', 'F', '8', 3, 45000, 'Thường'),
+('3F9', 'F', '9', 3, 45000, 'Thường'),
+('3G0', 'G', '0', 3, 45000, 'Thường'),
+('3G1', 'G', '1', 3, 45000, 'Thường'),
+('3G2', 'G', '2', 3, 45000, 'Thường'),
+('3G3', 'G', '3', 3, 45000, 'Thường'),
+('3G4', 'G', '4', 3, 45000, 'Thường'),
+('3G5', 'G', '5', 3, 45000, 'Thường'),
+('3G6', 'G', '6', 3, 45000, 'Thường'),
+('3G7', 'G', '7', 3, 45000, 'Thường'),
+('3G8', 'G', '8', 3, 45000, 'Thường'),
+('3G9', 'G', '9', 3, 45000, 'Thường'),
+('3H0', 'H', '0', 3, 45000, 'Thường'),
+('3H1', 'H', '1', 3, 45000, 'Thường'),
+('3H2', 'H', '2', 3, 45000, 'Thường'),
+('3H3', 'H', '3', 3, 45000, 'Thường'),
+('3H4', 'H', '4', 3, 45000, 'Thường'),
+('3H5', 'H', '5', 3, 45000, 'Thường'),
+('3H6', 'H', '6', 3, 45000, 'Thường'),
+('3H7', 'H', '7', 3, 45000, 'Thường'),
+('3H8', 'H', '8', 3, 45000, 'Thường'),
+('3H9', 'H', '9', 3, 45000, 'Thường'),
+('3I0', 'I', '0', 3, 45000, 'Thường'),
+('3I1', 'I', '1', 3, 45000, 'Thường'),
+('3I2', 'I', '2', 3, 45000, 'Thường'),
+('3I3', 'I', '3', 3, 45000, 'Thường'),
+('3I4', 'I', '4', 3, 45000, 'Thường'),
+('3I5', 'I', '5', 3, 45000, 'Thường'),
+('3I6', 'I', '6', 3, 45000, 'Thường'),
+('3I7', 'I', '7', 3, 45000, 'Thường'),
+('3I8', 'I', '8', 3, 45000, 'Thường'),
+('3I9', 'I', '9', 3, 45000, 'Thường'),
+('3J0', 'J', '0', 3, 45000, 'Thường'),
+('3J1', 'J', '1', 3, 45000, 'Thường'),
+('3J2', 'J', '2', 3, 45000, 'Thường'),
+('3J3', 'J', '3', 3, 45000, 'Thường'),
+('3J4', 'J', '4', 3, 45000, 'Thường'),
+('3J5', 'J', '5', 3, 45000, 'Thường'),
+('3J6', 'J', '6', 3, 45000, 'Thường'),
+('3J7', 'J', '7', 3, 45000, 'Thường'),
+('3J8', 'J', '8', 3, 45000, 'Thường'),
+('3J9', 'J', '9', 3, 45000, 'Thường');
 
 -- --------------------------------------------------------
 --
@@ -475,10 +475,10 @@ CREATE TABLE KHACHHANG (
 --
 
 INSERT INTO khachhang ([MAKH], [TENKH], [GIOITINH], [NGAYSINH], [DIACHI], [DIENTHOAI], [CMND], [NGAYDK], [DIEMTICHLUY], [MALKH]) VALUES
-(1, 'Lê Tăng Có', 'Nam', '1999-08-16', 'Quảng Ngãi', '123', '0332858127', '2019-06-12', '0', 2),
-(2, 'Trương Thị Mỹ Linh', 'Nữ', '1999-11-16', 'Quảng Nam', '0355085340', '123214214', '2019-06-20', '0', 3),
-(3, 'Nguyễn Văn A', 'Nam', '2019-06-21', 'a', 'a', 'a', '2019-06-06', '0', 2),
-(4, 'Nguyễn Văn C', 'Nam', '2019-06-22', 'a', 'a', 'a', '2019-06-13', '0', 2);
+(1, 'L� T?ng C�', 'Nam', '1999-08-16', 'Qu?ng Ng�i', '123', '0332858127', '2019-06-12', '0', 2),
+(2, 'Tr??ng Th? M? Linh', 'N?', '1999-11-16', 'Qu?ng Nam', '0355085340', '123214214', '2019-06-20', '0', 3),
+(3, 'Nguy?n V?n A', 'Nam', '2019-06-21', 'a', 'a', 'a', '2019-06-06', '0', 2),
+(4, 'Nguy?n V?n C', 'Nam', '2019-06-22', 'a', 'a', 'a', '2019-06-13', '0', 2);
 
 select *from KHACHHANG;
 -- --------------------------------------------------------
@@ -558,17 +558,17 @@ CREATE TABLE PHIM (
 
 INSERT INTO phim ([MAPHIM], [TENPHIM], [THOILUONG], [DAODIEN], [DIENVIEN], [PHUDE], [NGAYCONGCHIEU], [DOTUOI], [THELOAI], [LinkAnh]) VALUES
 (2, 'Aladdin', 123, 'a', 'a', 'a', '2019-06-06', 13, 'a', 'D:\PosterPhim\Aladdin.PNG'),
-(3, 'Captain', 100, 'Abc', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-19', 13, 'HÃ nh Ä‘á»™ng', 'D:\PosterPhim\Captain.PNG'),
-(4, 'ChÃºa tá»ƒ Godzilla', 180, 'abc', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-20', 16, 'HÃ nh Ä‘á»™ng', 'D:\PosterPhim\ChÃºa tá»ƒ Godzilla.PNG'),
-(5, 'HellBoy', 100, 'abc', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-10', 18, 'HÃ nh Ä‘á»™ng', 'D:\PosterPhim\HellBoy.PNG'),
-(6, 'NgÃ´i Ä‘á»n ká»³ quÃ¡i', 120, 'abc', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-11', 18, 'Kinh dá»‹', 'D:\PosterPhim\NgÃ´i Ä‘á»n ká»³ quÃ¡i.PNG'),
-(7, 'Ná»¥ hÃ´n ma quÃ¡i', 110, 'abc', 'abc', 'ThÃ¡i Lan', '2019-06-04', 18, 'Kinh dá»‹', 'D:\PosterPhim\Ná»¥ hÃ´n ma quÃ¡i.PNG'),
-(8, 'SÃ¡t thá»§', 150, 'abc', 'abc', 'Tiáº¿ng Anh', '2019-06-11', 18, 'HÃ nh Ä‘á»™ng', 'D:\PosterPhim\SÃ¡t thá»§.PNG'),
-(9, 'ThÃ¡m tá»­ pikachu', 110, 'abc', 'abc', 'Tiáº¿ng nháº­t', '2019-06-04', 18, 'Hoáº¡t hÃ¬nh', 'D:\PosterPhim\ThÃ¡m tá»­ pikachu.PNG'),
-(10, 'Tháº±ng em lÃ½ tÆ°á»Ÿng', 100, 'abc', 'abc', 'Tiáº¿ng HÃ n', '2019-06-03', 13, 'HÃ i', 'D:\PosterPhim\Tháº±ng em lÃ½ tÆ°á»Ÿng.PNG'),
-(11, 'Vua khá»§ng long', 120, 'ab', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-10', 13, 'Hoáº¡t hÃ¬nh', 'D:\PosterPhim\Vua khá»§ng long.PNG'),
-(12, 'X-men', 150, 'abc', 'abc', 'Tiáº¿ng anh', '2019-06-19', 18, 'HÃ nh Ä‘á»™ng', 'D:\PosterPhim\X-men.PNG'),
-(13, 'Æ¯á»›c háº¹n mÃ¹a thu', 111, 'abc', 'abc', 'Tiáº¿ng Viá»‡t', '2019-06-03', 18, 'TÃ¬nh cáº£m', 'D:\PosterPhim\Æ¯á»›c háº¹n mÃ¹a thu1.PNG');
+(3, 'Captain', 100, 'Abc', 'abc', 'Tiếng Việt', '2019-06-19', 13, 'Hành động', 'D:\PosterPhim\Captain.PNG'),
+(4, 'Chúa tể Godzilla', 180, 'abc', 'abc', 'Tiếng Việt', '2019-06-20', 16, 'Hành động', 'D:\PosterPhim\Chúa tể Godzilla.PNG'),
+(5, 'HellBoy', 100, 'abc', 'abc', 'Tiếng Việt', '2019-06-10', 18, 'Hành động', 'D:\PosterPhim\HellBoy.PNG'),
+(6, 'Ngôi đền kỳ quái', 120, 'abc', 'abc', 'Tiếng Việt', '2019-06-11', 18, 'Kinh dị', 'D:\PosterPhim\Ngôi đền kỳ quái.PNG'),
+(7, 'Nụ hôn ma quái', 110, 'abc', 'abc', 'Thái Lan', '2019-06-04', 18, 'Kinh dị', 'D:\PosterPhim\Nụ hôn ma quái.PNG'),
+(8, 'Sát thủ', 150, 'abc', 'abc', 'Tiếng Anh', '2019-06-11', 18, 'Hành động', 'D:\PosterPhim\Sát thủ.PNG'),
+(9, 'Thám tử pikachu', 110, 'abc', 'abc', 'Tiếng nhật', '2019-06-04', 18, 'Hoạt hình', 'D:\PosterPhim\Thám tử pikachu.PNG'),
+(10, 'Thằng em lý tưởng', 100, 'abc', 'abc', 'Tiếng Hàn', '2019-06-03', 13, 'Hài', 'D:\PosterPhim\Thằng em lý tưởng.PNG'),
+(11, 'Vua khủng long', 120, 'ab', 'abc', 'Tiếng Việt', '2019-06-10', 13, 'Hoạt hình', 'D:\PosterPhim\Vua khủng long.PNG'),
+(12, 'X-men', 150, 'abc', 'abc', 'Tiếng anh', '2019-06-19', 18, 'Hành động', 'D:\PosterPhim\X-men.PNG'),
+(13, 'Ước hẹn mùa thu', 111, 'abc', 'abc', 'Tiếng Việt', '2019-06-03', 18, 'Tình cảm', 'D:\PosterPhim\Ước hẹn mùa thu1.PNG');
 
 -- --------------------------------------------------------
 
@@ -588,7 +588,7 @@ INSERT INTO phongchieu ([MAPC], [TENPC], [DIENTICH]) VALUES
 -- --------------------------------------------------------
 
 --
--- Cáº¥u trÃºc báº£ng cho báº£ng `quyen`
+-- Cấu trúc bảng cho bảng `quyen`
 --
 
 CREATE TABLE QUYEN (
@@ -597,18 +597,18 @@ CREATE TABLE QUYEN (
 ) ;
 
 --
--- Äang Ä‘á»• dá»¯ liá»‡u cho báº£ng `quyen`
+-- Đang đổ dữ liệu cho bảng `quyen`
 --
 
 INSERT INTO quyen ([MAPQ], [TenQuyen]) VALUES
-(1, 'Quáº£n trá»‹ viÃªn'),
-(2, 'Quáº£n lÃ½ thanh toÃ¡n'),
-(3, 'Quáº£n lÃ½ khuyáº¿n mÃ£i'),
-(4, 'Quáº£n lÃ½ lá»‹ch chiáº¿u'),
-(5, 'Quáº£n lÃ½ phim'),
-(6, 'Quáº£n lÃ½ CSVC'),
-(7, 'Quáº£n lÃ½ khÃ¡ch hÃ ng'),
-(8, 'Quáº£n lÃ½ sáº£n pháº©m ');
+(1, 'Quản trị viên'),
+(2, 'Quản lý thanh toán'),
+(3, 'Quản lý khuyến mãi'),
+(4, 'Quản lý lịch chiếu'),
+(5, 'Quản lý phim'),
+(6, 'Quản lý CSVC'),
+(7, 'Quản lý khách hàng'),
+(8, 'Quản lý sản phẩm ');
 
 -- --------------------------------------------------------
 
@@ -627,14 +627,14 @@ CREATE TABLE SANPHAM (
 
 
 INSERT INTO sanpham ([MASP], [TENSP], [GIA], [DOIVITINH], [XUATXU], [NGAYNHAP], [HSD], [LinkAnh]) VALUES
-(1, '7up', 400000, 'Lon', 'Viá»‡t Nam', '2019-06-01', '2019-06-07', 'D:SanPham7up.PNG'),
-(2, 'Báº¯p caramen', 45000, 'Pháº§n', 'Viá»‡t Nam', '2019-06-01', '2019-06-30', 'D:\SanPham\Báº¯p caramen.PNG'),
-(3, 'Báº¯p phÃ´ mai', 50000, 'Pháº§n', 'Viá»‡t Nam', '2019-06-01', '2019-06-30', 'D:\SanPham\Báº¯p phÃ´ mai.PNG'),
-(4, 'fanta', 20000, 'Lon', 'Viá»‡t Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\fanta.PNG'),
-(5, 'Milo', 20000, 'Lon', 'Viá»‡t Nam', '2019-06-08', '2019-06-29', 'D:\SanPham\Milo.PNG'),
-(7, 'Pepsi', 20000, 'Lon', 'Viá»‡t Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Pepsi.PNG'),
-(8, 'Rong biá»ƒn', 30000, 'GÃ³i', 'Viá»‡t Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Rong biá»ƒn.PNG'),
-(9, 'Snack', 1000, 'GÃ³i', 'Viá»‡t Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Snack.PNG');
+(1, '7up', 400000, 'Lon', 'Việt Nam', '2019-06-01', '2019-06-07', 'D:SanPham7up.PNG'),
+(2, 'Bắp caramen', 45000, 'Phần', 'Việt Nam', '2019-06-01', '2019-06-30', 'D:\SanPham\Bắp caramen.PNG'),
+(3, 'Bắp phô mai', 50000, 'Phần', 'Việt Nam', '2019-06-01', '2019-06-30', 'D:\SanPham\Bắp phô mai.PNG'),
+(4, 'fanta', 20000, 'Lon', 'Việt Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\fanta.PNG'),
+(5, 'Milo', 20000, 'Lon', 'Việt Nam', '2019-06-08', '2019-06-29', 'D:\SanPham\Milo.PNG'),
+(7, 'Pepsi', 20000, 'Lon', 'Việt Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Pepsi.PNG'),
+(8, 'Rong biển', 30000, 'Gói', 'Việt Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Rong biển.PNG'),
+(9, 'Snack', 1000, 'Gói', 'Việt Nam', '2019-06-01', '2019-06-29', 'D:\SanPham\Snack.PNG');
 
 -- --------------------------------------------------------
 --
@@ -652,17 +652,17 @@ CREATE TABLE SUKIEN (
 )   ;
 
 --
--- Äang Ä‘á»• dá»¯ liá»‡u cho báº£ng `sukien`
+-- Đang đổ dữ liệu cho bảng `sukien`
 --
 
 INSERT INTO sukien ([MASK], [TENSK], [TGBD], [TGKT], [ANPHAMTT], [DOITUONG], [PHANLOAI], [MANV], [MOTA]) VALUES
 (1, 'B', '2019-06-06', '2019-06-15', 'a', 'a', 'a', 1, 'a'),
-(2, 'Thá»© 2 Ä‘áº§u thÃ¡ng', '2019-06-01', '2019-06-30', 'poster', 'HSSV', 'Sá»± kiá»‡n hÃ ng thÃ¡ng', 1, 'a');
+(2, 'Thứ 2 đầu tháng', '2019-06-01', '2019-06-30', 'poster', 'HSSV', 'Sự kiện hàng tháng', 1, 'a');
 
 -- --------------------------------------------------------
 
 --
--- Cáº¥u trÃºc báº£ng cho báº£ng `taikhoan`
+-- Cấu trúc bảng cho bảng `taikhoan`
 --
 
 CREATE TABLE TAIKHOAN (
@@ -675,19 +675,19 @@ CREATE TABLE TAIKHOAN (
 )   ;
 
 --
--- Äang Ä‘á»• dá»¯ liá»‡u cho báº£ng `taikhoan`
+-- Đang đổ dữ liệu cho bảng `taikhoan`
 --
 
 INSERT INTO taikhoan ([MATK], [MANV], [TenDN], [PASSWORD], [MAPQ], [VITRI]) VALUES
-(1, 1, 'admin1', 'admin', 1, 'Quáº£n trá»‹ viÃªn'),
-(2, 2, 'hong1', '123', 2, 'Quáº£n lÃ½ thanh toÃ¡n'),
-(3, 3, 'phi1', '123', 3, 'Quáº£n lÃ½ khuyáº¿n mÃ£i'),
-(4, 4, 'hieu123', '123', 5, 'Quáº£n lÃ½ phim');
+(1, 1, 'admin1', 'admin', 1, 'Quản trị viên'),
+(2, 2, 'hong1', '123', 2, 'Quản lý thanh toán'),
+(3, 3, 'phi1', '123', 3, 'Quản lý khuyến mãi'),
+(4, 4, 'hieu123', '123', 5, 'Quản lý phim');
 
 -- --------------------------------------------------------
 
 --
--- Cáº¥u trÃºc báº£ng cho báº£ng `thietbi`
+-- Cấu trúc bảng cho bảng `thietbi`
 --
 
 CREATE TABLE THIETBI (
@@ -701,24 +701,24 @@ CREATE TABLE THIETBI (
 --
 
 INSERT INTO thietbi ([MATB], [TENTB], [SL], [HANGSX]) VALUES
-(1, 'MÃ¡y láº¡nh', 12, 'Toshiba'),
-(2, 'MÃ¡y chiáº¿u', 2, 'Sony'),
-(3, 'MÃ n hÃ¬nh', 3, 'Samsung');
+(1, 'Máy lạnh', 12, 'Toshiba'),
+(2, 'Máy chiếu', 2, 'Sony'),
+(3, 'Màn hình', 3, 'Samsung');
 
----Thực hiện thêm khóa chính khóa ngoại và các ràng buộc có điều kiện
---- Table LoaiKH và KHACH HANG ---
+---Th?c hi?n th�m kh�a ch�nh kh�a ngo?i v� c�c r�ng bu?c c� ?i?u ki?n
+--- Table LoaiKH v� KHACH HANG ---
 alter table LOAIKH add primary key (MALKH);
 alter table KHACHHANG add primary key (MAKH);
 alter table KHACHHANG add foreign key (MALKH) references LOAIKH(MALKH);
---- Table THIETBI và CTTB và PHONGCHIEU---
+--- Table THIETBI v� CTTB v� PHONGCHIEU---
 alter table CTTB add primary key (MATB,MAPC); 
 alter table THIETBI add primary key (MATB);
 alter table CTTB add foreign key (MATB) references THIETBI(MATB);
 ---TABLE PHONGCHIEU---
 alter table PHONGCHIEU add primary key(MAPC);
----Tạo khóa ngoại PHONGCHIEU và CTTB---
+---T?o kh�a ngo?i PHONGCHIEU v� CTTB---
 alter table CTTB add foreign key (MAPC) references PHONGCHIEU(MAPC);
----table PHIM và CACHIEU và PHONGCHIEU---
+---table PHIM v� CACHIEU v� PHONGCHIEU---
 alter table PHIM ADD PRIMARY KEY (MAPHIM);
 alter table CACHIEU add primary key(MACC);
 alter table CACHIEU add foreign key (MAPHIM) references PHIM(MAPHIM);
@@ -728,33 +728,33 @@ alter table SANPHAM add primary key(MASP);
 ---table CTSP
 alter table CTSP add primary key (SOHD,MASP);
 alter table CTSP add foreign key (MASP) references SANPHAM(MASP);
----table KHUYENMAI và CTSP---
+---table KHUYENMAI v� CTSP---
 alter table KHUYENMAI ADD PRIMARY KEY(MAKM);
 alter table CTSP add foreign key (MAKM) REFERENCES KHUYENMAI(MAKM);
----table GHE và PHONGCHIEU---
+---table GHE v� PHONGCHIEU---
 alter table GHE ADD PRIMARY KEY (MAGHE);
 alter table GHE add foreign key (MAPC) REFERENCES PHONGCHIEU(MAPC);
----table CTVE và CACHIEU và GHE và KHUYENMAI---
+---table CTVE v� CACHIEU v� GHE v� KHUYENMAI---
 alter table CTVE ADD PRIMARY KEY(SOHD,MACC,MAGHE);
 alter table CTVE add foreign key (MACC) REFERENCES CACHIEU(MACC);
 alter table CTVE add foreign key(MAGHE) REFERENCES GHE(MAGHE);
 alter table CTVE add foreign key(MAKM) REFERENCES KHUYENMAI(MAKM);
----table SUKIEN và KHUYENMAI---
+---table SUKIEN v� KHUYENMAI---
 alter table SUKIEN add primary key (MASK);
 alter table KHUYENMAI add foreign key(MASK) references SUKIEN(MASK);
----table HOADON VÀ CTSP và KHACHHANG và CTVE---
+---table HOADON V� CTSP v� KHACHHANG v� CTVE---
 alter table HOADON add primary key(SOHD);
 alter table CTSP ADD FOREIGN KEY (SOHD) REFERENCES HOADON(SOHD);
 alter table HOADON add foreign key (MAKH) REFERENCES KHACHHANG(MAKH);
 alter table CTVE ADD FOREIGN KEY (SOHD) REFERENCES HOADON(SOHD);
----table NHANVIEN và SUKIEN và HOADON---
+---table NHANVIEN v� SUKIEN v� HOADON---
 alter table NHANVIEN add primary key(MANV);
 alter table SUKIEN ADD FOREIGN KEY(MANV) REFERENCES NHANVIEN(MANV);
 alter table HOADON add foreign key (MANV) references NHANVIEN(MANV);
----table BAOCAO và NHANVIEN---
+---table BAOCAO v� NHANVIEN---
 alter table BAOCAO add primary key (MABC);
 alter table BAOCAO add foreign key (MANV) REFERENCES NHANVIEN(MANV);
----table QUYEN và TAIKHOAN và NHANVIEN---
+---table QUYEN v� TAIKHOAN v� NHANVIEN---
 alter table QUYEN add primary key(MAPQ);
 alter table TAIKHOAN add primary key(MATK);
 alter table TAIKHOAN add foreign key (MAPQ) REFERENCES QUYEN(MAPQ);
@@ -768,13 +768,13 @@ alter table TAIKHOAN add foreign key (MANV) references NHANVIEN(MANV);
 
 
 
---////Chưa thêm
+--////Ch?a th�m
 ALTER TABLE [baocao]
   ADD PRIMARY KEY ([MABC]),
   ADD KEY `PK3_manv` ([MANV]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `cachieu`
+-- Chỉ mục cho bảng `cachieu`
 --
 ALTER TABLE [cachieu]
   ADD PRIMARY KEY ([MACC]),
@@ -782,7 +782,7 @@ ALTER TABLE [cachieu]
   ADD KEY `PK_mapc` ([MAPC]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `ctsp`
+-- Chỉ mục cho bảng `ctsp`
 --
 ALTER TABLE [ctsp]
   ADD PRIMARY KEY ([SOHD],[MASP]),
@@ -790,14 +790,14 @@ ALTER TABLE [ctsp]
   ADD KEY `PK1_masp` ([MASP]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `cttb`
+-- Chỉ mục cho bảng `cttb`
 --
 ALTER TABLE [cttb]
   ADD PRIMARY KEY ([MATB],[MAPC]),
   ADD KEY `PK2_mapc` ([MAPC]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `ctve`
+-- Chỉ mục cho bảng `ctve`
 --
 ALTER TABLE [ctve]
   ADD PRIMARY KEY ([SOHD],[MACC],[MAGHE]),
@@ -806,14 +806,14 @@ ALTER TABLE [ctve]
   ADD KEY `PK1_macc` ([MACC]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `ghe`
+-- Chỉ mục cho bảng `ghe`
 --
 ALTER TABLE [ghe]
   ADD PRIMARY KEY ([MAGHE]),
   ADD KEY `PK1_mapc` ([MAPC]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `hoadon`
+-- Chỉ mục cho bảng `hoadon`
 --
 ALTER TABLE [hoadon]
   ADD PRIMARY KEY ([SOHD]),
@@ -821,66 +821,66 @@ ALTER TABLE [hoadon]
   ADD KEY `manv3` ([MANV]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `khachhang`
+-- Chỉ mục cho bảng `khachhang`
 --
 ALTER TABLE [khachhang]
   ADD PRIMARY KEY ([MAKH]),
   ADD KEY `malkh` ([MALKH]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `khuyenmai`
+-- Chỉ mục cho bảng `khuyenmai`
 --
 ALTER TABLE [khuyenmai]
   ADD PRIMARY KEY ([MAKM]),
   ADD KEY `PK_mask` ([MASK]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `loaikh`
+-- Chỉ mục cho bảng `loaikh`
 --
 ALTER TABLE [loaikh]
   ADD PRIMARY KEY ([MALKH]),
   ADD KEY `malkh` ([MALKH]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `nhanvien`
+-- Chỉ mục cho bảng `nhanvien`
 --
 ALTER TABLE [nhanvien]
   ADD PRIMARY KEY ([MANV]);
 
 --
--- Chá»‰ má»¥c cho báº£ng `phim`
+-- Chỉ mục cho bảng `phim`
 --
 ALTER TABLE [phim]
   ADD PRIMARY KEY ([MAPHIM]),
   ADD KEY `tenphim` ([TENPHIM]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `phongchieu`
+-- Chỉ mục cho bảng `phongchieu`
 --
 ALTER TABLE [phongchieu]
   ADD PRIMARY KEY ([MAPC]);
 
 --
--- Chá»‰ má»¥c cho báº£ng `quyen`
+-- Chỉ mục cho bảng `quyen`
 --
 ALTER TABLE [quyen]
   ADD PRIMARY KEY ([MAPQ]);
 
 --
--- Chá»‰ má»¥c cho báº£ng `sanpham`
+-- Chỉ mục cho bảng `sanpham`
 --
 ALTER TABLE [sanpham]
   ADD PRIMARY KEY ([MASP]);
 
 --
--- Chá»‰ má»¥c cho báº£ng `sukien`
+-- Chỉ mục cho bảng `sukien`
 --
 ALTER TABLE [sukien]
   ADD PRIMARY KEY ([MASK]),
   ADD KEY `PK_manv` ([MANV]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `taikhoan`
+-- Chỉ mục cho bảng `taikhoan`
 --
 ALTER TABLE [taikhoan]
   ADD PRIMARY KEY ([MATK]),
@@ -889,118 +889,118 @@ ALTER TABLE [taikhoan]
   ADD KEY `PK_MAPQ1` ([MAPQ]) USING BTREE;
 
 --
--- Chá»‰ má»¥c cho báº£ng `thietbi`
+-- Chỉ mục cho bảng `thietbi`
 --
 ALTER TABLE [thietbi]
   ADD PRIMARY KEY ([MATB]);
 
 --
--- AUTO_INCREMENT cho cÃ¡c báº£ng Ä‘Ã£ Ä‘á»•
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT cho báº£ng `baocao`
+-- AUTO_INCREMENT cho bảng `baocao`
 --
 ALTER TABLE [baocao]
   MODIFY [MABC] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho báº£ng `cachieu`
+-- AUTO_INCREMENT cho bảng `cachieu`
 --
 ALTER TABLE [cachieu]
   MODIFY [MACC] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT cho báº£ng `hoadon`
+-- AUTO_INCREMENT cho bảng `hoadon`
 --
 ALTER TABLE [hoadon]
   MODIFY [SOHD] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT cho báº£ng `khachhang`
+-- AUTO_INCREMENT cho bảng `khachhang`
 --
 ALTER TABLE [khachhang]
   MODIFY [MAKH] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho báº£ng `khuyenmai`
+-- AUTO_INCREMENT cho bảng `khuyenmai`
 --
 ALTER TABLE [khuyenmai]
   MODIFY [MAKM] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho báº£ng `loaikh`
+-- AUTO_INCREMENT cho bảng `loaikh`
 --
 ALTER TABLE [loaikh]
   MODIFY [MALKH] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT cho báº£ng `nhanvien`
+-- AUTO_INCREMENT cho bảng `nhanvien`
 --
 ALTER TABLE [nhanvien]
   MODIFY [MANV] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho báº£ng `phim`
+-- AUTO_INCREMENT cho bảng `phim`
 --
 ALTER TABLE [phim]
   MODIFY [MAPHIM] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT cho báº£ng `phongchieu`
+-- AUTO_INCREMENT cho bảng `phongchieu`
 --
 ALTER TABLE [phongchieu]
   MODIFY [MAPC] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho báº£ng `quyen`
+-- AUTO_INCREMENT cho bảng `quyen`
 --
 ALTER TABLE [quyen]
   MODIFY [MAPQ] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT cho báº£ng `sanpham`
+-- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE [sanpham]
   MODIFY [MASP] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT cho báº£ng `sukien`
+-- AUTO_INCREMENT cho bảng `sukien`
 --
 ALTER TABLE [sukien]
   MODIFY [MASK] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho báº£ng `taikhoan`
+-- AUTO_INCREMENT cho bảng `taikhoan`
 --
 ALTER TABLE [taikhoan]
   MODIFY [MATK] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho báº£ng `thietbi`
+-- AUTO_INCREMENT cho bảng `thietbi`
 --
 ALTER TABLE [thietbi]
   MODIFY [MATB] cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- CÃ¡c rÃ ng buá»™c cho cÃ¡c báº£ng Ä‘Ã£ Ä‘á»•
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `baocao`
+-- Các ràng buộc cho bảng `baocao`
 --
 ALTER TABLE [baocao]
   ADD CONSTRAINT [PK3_manv] FOREIGN KEY ([MANV]) REFERENCES nhanvien ([MANV]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `cachieu`
+-- Các ràng buộc cho bảng `cachieu`
 --
 ALTER TABLE [cachieu]
   ADD CONSTRAINT [PK1_maphim] FOREIGN KEY ([MAPHIM]) REFERENCES phim ([MAPHIM]),
   ADD CONSTRAINT [PK_mapc] FOREIGN KEY ([MAPC]) REFERENCES `phongchieu` ([MAPC]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `ctsp`
+-- Các ràng buộc cho bảng `ctsp`
 --
 ALTER TABLE [ctsp]
   ADD CONSTRAINT [PK1_makm] FOREIGN KEY ([MAKM]) REFERENCES khuyenmai ([MAKM]),
@@ -1008,14 +1008,14 @@ ALTER TABLE [ctsp]
   ADD CONSTRAINT [PK3_sohd] FOREIGN KEY ([SOHD]) REFERENCES `hoadon` ([SOHD]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `cttb`
+-- Các ràng buộc cho bảng `cttb`
 --
 ALTER TABLE [cttb]
   ADD CONSTRAINT [PK1_matb] FOREIGN KEY ([MATB]) REFERENCES thietbi ([MATB]),
   ADD CONSTRAINT [PK2_mapc] FOREIGN KEY ([MAPC]) REFERENCES `phongchieu` ([MAPC]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `ctve`
+-- Các ràng buộc cho bảng `ctve`
 --
 ALTER TABLE [ctve]
   ADD CONSTRAINT [PK1_macc] FOREIGN KEY ([MACC]) REFERENCES cachieu ([MACC]),
@@ -1024,38 +1024,38 @@ ALTER TABLE [ctve]
   ADD CONSTRAINT [PK2_makh] FOREIGN KEY ([MAKM]) REFERENCES `khuyenmai` ([MAKM]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `ghe`
+-- Các ràng buộc cho bảng `ghe`
 --
 ALTER TABLE [ghe]
   ADD CONSTRAINT [PK1_mapc] FOREIGN KEY ([MAPC]) REFERENCES phongchieu ([MAPC]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `hoadon`
+-- Các ràng buộc cho bảng `hoadon`
 --
 ALTER TABLE [hoadon]
   ADD CONSTRAINT [PK1_makh] FOREIGN KEY ([MAKH]) REFERENCES khachhang ([MAKH]),
   ADD CONSTRAINT [PK1_manv] FOREIGN KEY ([MANV]) REFERENCES `nhanvien` ([MANV]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `khachhang`
+-- Các ràng buộc cho bảng `khachhang`
 --
 ALTER TABLE [khachhang]
   ADD CONSTRAINT [PK_malkh] FOREIGN KEY ([MALKH]) REFERENCES loaikh ([MALKH]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `khuyenmai`
+-- Các ràng buộc cho bảng `khuyenmai`
 --
 ALTER TABLE [khuyenmai]
   ADD CONSTRAINT [PK_mask] FOREIGN KEY ([MASK]) REFERENCES sukien ([MASK]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `sukien`
+-- Các ràng buộc cho bảng `sukien`
 --
 ALTER TABLE [sukien]
   ADD CONSTRAINT [PK_manv] FOREIGN KEY ([MANV]) REFERENCES nhanvien ([MANV]);
 
 --
--- CÃ¡c rÃ ng buá»™c cho báº£ng `taikhoan`
+-- Các ràng buộc cho bảng `taikhoan`
 --
 ALTER TABLE [taikhoan]
   ADD CONSTRAINT [PK_MANV1] FOREIGN KEY ([MANV]) REFERENCES nhanvien ([MANV]),
