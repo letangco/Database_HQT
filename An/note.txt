@@ -1,0 +1,11 @@
+1) mô hình quan hệ khác bảng mô tả dữ liệu :
+khách hàng : dư manv => bỏ manv
+nhân viên : dư tổng tiền bán => thay bằng thuộc tính luông cho nhân viên
+bảng phim : thiếu ngôn ngữ => đả thêm vào bảng, thiếu năm sản xuất => đã thêm vào bảng.
+bảng phòng chiếu : thiếu số ghế => đã thêm vào bảng
+quan hệ sản phẩm thiếu : dvt, hsd, sl => đã bổ sung
+sai tên mapc ở mô hình quan hệ(map) => đã sữa
+* hóa đơn khác tên : tongtrigia, tongthanh tien
+* san pham khác tên : doanhthusp, doanhthu
+* su kiện khác tên : mota , motask
+
